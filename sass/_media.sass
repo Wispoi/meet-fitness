@@ -1,0 +1,296 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1600px)
+	/**/
+@media only screen and (max-width : 1439px)
+	/**/
+@media only screen and (max-width : 1199px)	
+	/**/
+@media only screen and (max-width : 991px)
+	/**/
+@media only screen and (max-width : 767px)
+	.mobile
+		display: block!important
+	.desktop
+		display: none!important
+	.header-menu
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 99
+		width: 100%
+		height: 100vh
+		background-color: #0F1113
+		max-height: 0
+		overflow: hidden
+		transition: all 1s ease
+		ul
+			padding-top: 41px
+			flex-direction: column
+			margin-bottom: 40px
+			margin-top: 55px
+			border-top: 1px solid #252729
+			li
+				a, div
+					font-style: normal
+					font-weight: 600
+					font-size: 20px
+					line-height: 60px
+					text-align: center
+					color: #FFFFFF
+		.footer-left
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			padding-top: 32px
+			border-top: 1px solid #252729
+			margin: 0 20px
+			.footer-title
+				color: #999999
+				font-size: 13px
+				white-space: normal
+				text-align: center
+				a
+					color: #fff
+			.footer-subtitle 
+				margin-top: 24px
+				white-space: normal
+				text-align: center
+				a
+					font-size: 13px
+					color: #fff
+				
+	.header-logo
+		z-index: 999
+		svg
+			max-height: 25px
+
+	.header-icon
+		position: relative
+		z-index: 999
+		width: 28px
+		height: 18px
+		display: block
+		margin-top: -12px
+		span
+			height: 2px
+			background-color: #fff
+			width: 100%
+			display: block
+			margin: 6px 0
+			transition: all .3s ease
+		&:hover
+			span
+				background-color: #30CD9A
+	.header-wrapper
+		justify-content: space-between
+		padding: 14px 20px 14px 10px
+	.header.active
+
+		.header-icon
+			span
+				&:first-child
+					transform: translate(6px, 6px) rotate(-45deg)
+				&:nth-child(2)
+					opacity: 0
+				&:nth-child(3)
+					transform: translate(6px, -10px) rotate(45deg)
+	.main-logo
+		margin-bottom: 20px
+		svg
+			max-height: 40px
+	.main-title
+		font-size: 30px
+		line-height: 41px
+		margin-bottom: 5px
+	.main-subtitle
+		font-size: 20px
+		line-height: 27px
+		margin-bottom: 30px
+	.main-description
+		font-size: 18px
+		line-height: 25px
+		margin-bottom: 40px
+		margin-left: 20px
+		margin-right: 20px
+	.main-btn
+		max-width: 280px
+		height: 56px
+		font-size: 16px
+		line-height: 22px
+	.footer-left
+		display: none
+	.footer-right
+		width: 100%
+		text-align: center
+		span:first-child
+			text-align: center!important
+			margin-top: 0
+			margin-bottom: 5px
+		span:last-child
+			text-align: center
+	.footer-wrapper
+		padding: 20px 0
+		margin: 0 20px
+		max-width: calc(100% - 40px)
+	.quiz-step__question
+		font-style: normal
+		font-weight: bold
+		font-size: 24px
+		line-height: 33px
+		text-align: center
+		color: #000000
+	.quiz-step__answer
+		margin-top: 30px
+		max-width: 100%
+	.quiz-header
+		padding: 28px 20px
+	.quiz-input
+		max-width: calc(100vw - 40px)
+		label
+			font-size: 24px
+			line-height: 33px
+		input
+			font-size: 48px
+			line-height: 66px
+	.quiz-checkbox
+		margin-bottom: 64px
+	.quiz-checkbox+.main-btn
+		height: 56px
+	.quiz-header__back
+		font-style: normal
+		font-weight: 600
+		font-size: 13px
+		line-height: 18px
+		color: #999999
+		svg
+			max-width: 9px
+			margin-top: 0
+			margin-bottom: 0
+	.quiz-logo
+		svg
+			max-width: 24px
+	.quiz-counter
+		font-size: 13px
+		line-height: 18px
+	.quiz-step__answer
+		padding: 0 20px
+	.next-step
+		height: 76px
+		font-size: 16px
+		line-height: 22px
+		max-width: 380px
+		margin-bottom: 10px
+		span
+			font-size: 13px
+			line-height: 18px
+	.quiz-step__question
+		padding: 0 20px
+	.quiz-step__description
+		max-width: 100%
+		padding: 0 20px
+		margin-top: 10px
+	.circle-btn
+		height: 132px
+		width: 132px
+		margin: 0 8px
+		font-size: 13px
+		line-height: 18px
+		svg
+			max-width: 40px
+			margin-bottom: 11px
+	.jumbo-title
+		font-size: 20px
+		line-height: 27px
+		margin-top: 32px
+		margin-bottom: 13px
+	.jumbo-subtitle
+		font-size: 15px
+		line-height: 20px
+	.jumbo .slick-dots
+		top: 141px
+	.jumbo .slick-dots li button
+		width: 6px
+		height: 6px
+	.jumbo-image svg
+		max-width: 100%
+		max-height: 81vw
+		margin-bottom: -23px
+		margin-top: 4px
+	.join
+		margin-top: 47px
+	.join-title
+		font-size: 20px
+		line-height: 27px
+		margin-bottom: 13px
+	.join-subtitle
+		font-size: 15px
+		line-height: 20px
+		margin-bottom: 13px		
+	.new-stories.stories
+		margin-top: -7px
+	.stories-item__title
+		margin-bottom: 4px
+	.stories .slick-slide
+		margin: 0 20px
+	.new-stories .stories-bottom
+		padding-bottom: 12px
+	.new-stories .slick-dots li button
+		width: 6px
+		height: 6px
+	.new-stories .slick-dots
+		padding-top: 8px
+		margin-left: 0
+	.advantages-image
+		margin-top: -381px
+	.advantages-image__title
+		margin-top: 344px
+		font-size: 20px
+		line-height: 27px
+		padding: 0 20px
+	.new-stories+.advantages .advantages-wrapper
+		padding: 0 22px 0 20px
+		border-bottom: 0
+		.advantages-list
+			padding-bottom: 28px
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+	.limited-title
+		font-size: 20px
+		line-height: 27px
+		margin-top: -2px
+		margin-bottom: 13px
+	.limited-subtitle
+		font-size: 15px
+		line-height: 20px
+		margin-bottom: 25px
+	.limited-wrapper
+		margin: 0 20px
+		padding-bottom: 50px
+		margin-bottom: 48px
+	.limited-box
+		margin-bottom: 32px
+	.prefooter-wrapper
+		padding: 0 20px
+	.advantages-list li
+		margin-bottom: 22px
+	.prefooter+footer .footer-wrapper
+		padding: 20px 0
+	.jumbo
+		padding-top: 55px
+	.quiz-step__question+.fdr
+		margin-top: 58px
+@media only screen and (max-width : 479px)
+	.main-wrapper
+		background-image: url(../images/mobile.svg)
+/*==========  Mobile First  ==========*/
+
+@media only screen and (min-width : 480px)
+	/**/
+@media only screen and (min-width : 768px)
+	/**/
+@media only screen and (min-width : 992px)
+	/**/
+@media only screen and (min-width : 1200px)
+	/**/

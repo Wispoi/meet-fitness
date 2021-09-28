@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="247px" height="247px" viewBox="0 0 247 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>loader-icon-2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tutorial_Noom_step31" transform="translate(-64.000000, -125.000000)">
+            <g id="loader-icon-2" transform="translate(63.000000, 125.000000)">
+                <circle id="Oval" cx="123.5" cy="123.5" r="123.5"></circle>
+                <circle id="Oval" stroke="#BAC0D1" stroke-width="30" opacity="0.149999991" cx="124.5" cy="123.5" r="108.5"></circle>
+                <circle id="Oval" stroke="#BAC0D1" stroke-width="30" opacity="0.149999991" cx="124.5" cy="123.5" r="74.5"></circle>
+                <path d="M191.394768,156.330343 C196.264819,146.425939 199,135.282387 199,123.5 C199,82.3547861 165.645214,49 124.5,49" id="Path" stroke="#74D24D" stroke-width="30" stroke-linecap="round"></path>
+                <circle id="Oval" stroke="#ABD73D" stroke-width="30" stroke-linecap="round" cx="124.5" cy="123.5" r="40.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,738 @@
+@import vars
+@import fonts
+@import libs
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Thin.eot")
+  src: local('Avenir Next Cyr Thin'), local('AvenirNextCyr-Thin'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Thin.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Thin.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Thin.ttf") format('truetype')
+  font-weight: 100
+  font-style: normal
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-ThinItalic.eot")
+  src: local('Avenir Next Cyr Thin Italic'), local('AvenirNextCyr-ThinItalic'), url("../fonts/AvenirNextCyr/AvenirNextCyr-ThinItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-ThinItalic.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-ThinItalic.ttf") format('truetype')
+  font-weight: 100
+  font-style: italic
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLight.eot")
+  src: local('Avenir Next Cyr Ultra Light'), local('AvenirNextCyr-UltraLight'), url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLight.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLight.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLight.ttf") format('truetype')
+  font-weight: 200
+  font-style: normal
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLightIt.eot")
+  src: local('Avenir Next Cyr Ultra Light Italic'), local('AvenirNextCyr-UltraLightItalic'), url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLightItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLightItalic.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLightItalic.ttf") format('truetype')
+  font-weight: 200
+  font-style: italic
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.eot")
+  src: local('Avenir Next Cyr Light'), local('AvenirNextCyr-Light'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.ttf") format('truetype')
+  font-weight: 300
+  font-style: normal
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.eot")
+  src: local('Avenir Next Cyr Light Italic'), local('AvenirNextCyr-LightItalic'), url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.ttf") format('truetype')
+  font-weight: 300
+  font-style: italic
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot")
+  src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format('truetype')
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.eot")
+  src: local('Avenir Next Cyr Italic'), local('AvenirNextCyr-Italic'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.ttf") format('truetype')
+  font-weight: 400
+  font-style: italic
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot")
+  src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf") format('truetype')
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-MediumItalic.eot")
+  src: local('Avenir Next Cyr Medium Italic'), local('AvenirNextCyr-MediumItalic'), url("../fonts/AvenirNextCyr/AvenirNextCyr-MediumItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-MediumItalic.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-MediumItalic.ttf") format('truetype')
+  font-weight: 500
+  font-style: italic
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot")
+  src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf") format('truetype')
+  font-weight: 600
+  font-style: normal
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-DemiItalic.eot")
+  src: local('Avenir Next Cyr Demi Italic'), local('AvenirNextCyr-DemiItalic'), url("../fonts/AvenirNextCyr/AvenirNextCyr-DemiItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-DemiItalic.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-DemiItalic.ttf") format('truetype')
+  font-weight: 600
+  font-style: italic
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot")
+  src: local('Avenir Next Cyr Bold'), local('AvenirNextCyr-Bold'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf") format('truetype')
+  font-weight: bold
+  font-style: normal
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-BoldItalic.eot")
+  src: local('Avenir Next Cyr Bold Italic'), local('AvenirNextCyr-BoldItalic'), url("../fonts/AvenirNextCyr/AvenirNextCyr-BoldItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-BoldItalic.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-BoldItalic.ttf") format('truetype')
+  font-weight: bold
+  font-style: italic
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.eot")
+  src: local('Avenir Next Cyr Heavy'), local('AvenirNextCyr-Heavy'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.ttf") format('truetype')
+  font-weight: 900
+  font-style: normal
+
+@font-face
+  font-family: 'Avenir Next Cyr'
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-HeavyItalic.eot")
+  src: local('Avenir Next Cyr Heavy Italic'), local('AvenirNextCyr-HeavyItalic'), url("../fonts/AvenirNextCyr/AvenirNextCyr-HeavyItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/AvenirNextCyr/AvenirNextCyr-HeavyItalic.woff?2") format('woff'), url("../fonts/AvenirNextCyr/AvenirNextCyr-HeavyItalic.ttf") format('truetype')
+  font-weight: 900
+  font-style: italic
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	color: $text
+	background-color: #EEEEEE
+	font-family: 'Avenir Next Cyr', sans-serif
+.section-wrapper
+	max-width: 890px
+	margin: 0 auto
+	width: 100%
+	padding: 0
+.header-wrapper
+	background: #0F1113
+	padding: 10px 20px 9px 20px
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	max-width: 100%
+	margin-top: 0
+.header-logo
+	margin-right: 20px
+a
+	text-decoration: none
+	transition: all .3s ease
+	&:hover
+		text-decoration: none
+header
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 999
+.header-menu
+	ul
+		list-style-type: none
+		display: flex
+		align-items: center
+		margin: 0
+		padding: 0
+		li
+			margin: 0 10px
+			a, div
+				font-style: normal
+				font-weight: normal
+				font-size: 13px
+				line-height: 18px
+				color: #FFFFFF
+				&:hover
+					color: #2FD491
+	.footer-left
+		display: none
+.main-wrapper
+	background-image: url(../img/Group587.svg)
+	background-size: cover
+	background-repeat: no-repeat
+
+.main-wrapper
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+.main-logo
+	margin-bottom: 40px
+.main-title
+	font-style: normal
+	font-weight: bold
+	font-size: 64px
+	line-height: 87px
+	text-align: center
+
+	color: #000000
+	margin-bottom: 5px
+.main-subtitle
+	font-style: normal
+	font-weight: 600
+	font-size: 36px
+	line-height: 49px
+	text-align: center
+
+	color: #000000
+	margin-bottom: 50px
+	max-width: 430px
+	margin-left: auto
+	margin-right: auto
+.main-description
+	font-style: normal
+	font-weight: 500
+	font-size: 24px
+	line-height: 33px
+	text-align: center
+
+	color: #000000
+	max-width: 430px
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 60px
+	span
+		color: #30CD9A
+.footer-new
+	position: fixed
+	bottom: 0
+	left: 0
+	width: 100%
+	z-index: 99
+.main-btn
+	max-width: 430px
+	margin-left: auto
+	margin-right: auto
+	background-color: #fff
+	background: #30CD9A
+	border-radius: 16px
+	display: flex
+	align-items: center
+	justify-content: center
+	font-style: normal
+	font-weight: bold
+	font-size: 20px
+	line-height: 27px
+	text-align: center
+	text-transform: uppercase
+	width: 100%
+	color: #FFFFFF
+	height: 70px
+	cursor: pointer
+	transition: all .3s ease
+	&:hover
+		opacity: 0.8
+.footer-wrapper
+	max-width: 810px
+	margin: 0 auto
+	width: 100%
+	padding-top: 27px
+	padding-bottom: 32px
+	border-top: 1px solid #EBEBEB
+	display: flex
+	align-items: center
+	padding-left: 20px
+	padding-right: 20px
+	justify-content: space-between
+.footer-title
+	font-style: normal
+	font-weight: normal
+	font-size: 13px
+	line-height: 18px
+	color: #999999
+	white-space: nowrap
+	margin-bottom: 0px
+	a
+		color: #30CD9A
+.footer-subtitle
+	color: #30CD9A
+	a
+		font-style: normal
+		font-weight: normal
+		font-size: 10px
+		line-height: 14px
+		text-decoration-line: underline
+
+		color: #30CD9A
+.footer-right
+	text-align: right
+	span:first-child
+		display: block
+		font-style: normal
+		font-weight: normal
+		font-size: 10px
+		line-height: 14px
+		text-align: right
+		color: #000000
+		margin-bottom: 8px
+		margin-top: -2px
+	span:last-child
+		display: block
+		font-style: normal
+		font-weight: normal
+		font-size: 10px
+		line-height: 14px
+		text-align: right
+
+		color: #999999
+
+		mix-blend-mode: normal
+.header-icon
+	display: none
+.quiz
+	position: fixed
+	z-index: 9999
+	top: 0
+	left: 0
+	width: 100vw!important
+	height: 100vh!important
+	display: none
+	.section-wrapper
+		background-color: #fff
+		position: relative
+		height: 100%
+.quiz-wrapper
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 100%
+	width: 100%
+.quiz-step
+	display: none
+	flex-direction: column
+	align-items: center
+	max-width: 430px
+	margin: 0 auto
+	&.active
+		display: flex
+.quiz-header
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 50px
+	position: absolute
+	top: 0
+	width: 100%
+	left: 0
+.quiz-header__back
+	font-style: normal
+	font-weight: 600
+	font-size: 20px
+	line-height: 27px
+	color: #999999
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	transition: all .3s ease
+	&:hover
+		color: $accent
+		svg path
+			fill: $accent
+	svg
+		margin-right: 15px
+		margin-bottom: -3px
+		path
+			transition: all .3s ease
+.quiz-counter
+	font-style: normal
+	font-weight: 600
+	font-size: 20px
+	line-height: 27px
+	color: #999999
+.quiz-step__question
+	font-style: normal
+	font-weight: bold
+	font-size: 40px
+	line-height: 55px
+	text-align: center
+
+	color: #000000
+.quiz-step__answer
+	margin-top: 60px
+	width: 100%
+.quiz-step__description
+	margin-top: 20px
+	font-style: normal
+	font-weight: normal
+	font-size: 18px
+	line-height: 25px
+	text-align: center
+	color: #000000
+.next-step
+	flex-direction: column
+	font-weight: bold
+	font-size: 20px
+	line-height: 27px
+	text-align: center
+	text-transform: uppercase
+	color: #FFFFFF
+	width: 100%
+	height: 105px
+	margin-bottom: 20px
+	&:last-child
+		margin-bottom: 0
+	span
+		font-style: normal
+		font-weight: normal
+		font-size: 16px
+		line-height: 22px
+		color: #FFFFFF
+		display: block
+		margin-top: 4px
+		text-transform: none
+.quiz-checkbox + .main-btn
+	height: 70px
+.main-btn
+	&.disabled
+		background-color: #CBCBCB
+		pointer-events: none
+.quiz-input
+	position: relative
+	margin-bottom: 30px
+	input
+		background: none
+		border: 0
+		border-bottom: 1px solid #DEDEDE
+		font-style: normal
+		font-weight: 500
+		font-size: 64px
+		line-height: 87px
+		text-align: center
+		color: #000000
+		max-width: 100%
+		padding-right: 55px
+		padding-left: 55px
+		text-align: center
+	label
+		position: absolute
+		top: 50%
+		right: 15px
+		transform: translateY(-50%)
+		font-style: normal
+		font-weight: 600
+		font-size: 40px
+		line-height: 55px
+		text-align: center
+		color: #000000
+		text-transform: lowercase
+.quiz-checkbox
+	display: flex
+	width: 152px
+	align-items: center
+	border: 1px solid #DEDEDE
+	box-sizing: border-box
+	filter: drop-shadow(0px 8px 16px rgba(76, 125, 167, 0.2))
+	border-radius: 22px
+	justify-content: space-between
+	margin: 0 auto
+	height: 34px
+	margin-bottom: 70px
+.quiz-checkbox__item
+	width: 50%
+	height: 100%
+	text-align: center
+	font-style: normal
+	font-weight: normal
+	font-size: 13px
+	line-height: 18px
+	color: #B0ABA9
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	&.selected
+		color: #3C3836
+		font-weight: 600
+	&:first-child
+		border-right: 1px solid #DEDEDE
+.circle-btn
+	width: 160px
+	height: 160px
+	border-radius: 50%
+	font-style: normal
+	font-weight: normal
+	font-size: 16px
+	line-height: 22px
+	text-align: center
+	color: #FFFFFF
+	text-transform: none
+	margin: 0 15px
+	&.fw
+		font-style: normal
+		font-weight: bold
+		font-size: 20px
+		line-height: 27px
+		text-align: center
+		text-transform: uppercase
+		color: #FFFFFF
+	svg
+		margin-bottom: 18px
+.quiz-logo
+	position: absolute
+	left: calc(50% + 6px)
+	transform: translateX(-50%)
+.fdr
+	flex-direction: row
+	display: flex
+	justify-content: center
+.jumbo-wrapper
+	background-image: url(../img/tutorial_simple_slide_22_1.png)
+	background-position: center
+	background-size: cover
+.jumbo
+	padding-top: 60px
+	.slick-dots
+		position: absolute
+		top: 170px
+		bottom: unset
+		height: auto
+		li
+			margin: 0
+			margin: 0
+			display: inline-flex
+			align-items: center
+			justify-content: center
+			width: 22px
+			height: 22px
+			&.slick-active
+				button
+					background-color: $accent
+			button
+				padding: 0
+				width: 8px
+				height: 8px
+				border-radius: 50%
+				background: #E7E7E7
+				&::before
+					display: none
+.jumbo-title
+	margin-top: 53px
+	font-style: normal
+	font-weight: bold
+	font-size: 26px
+	line-height: 36px
+	text-align: center
+	color: #000000
+	margin-bottom: 18px
+	max-width: 430px
+	padding: 0 20px
+	margin-left: auto
+	margin-right: auto
+.jumbo-subtitle
+	font-style: normal
+	font-weight: normal
+	font-size: 17px
+	line-height: 23px
+	text-align: center
+	color: #000000
+	max-width: 430px
+	padding: 0 20px
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 60px
+.jumbo-image
+	text-align: center
+
+	svg
+		margin-top: 4px
+.join
+	margin-top: 62px
+	margin-bottom: 55px
+.join-title
+	font-style: normal
+	font-weight: bold
+	font-size: 26px
+	line-height: 36px
+	text-align: center
+	color: #000000
+	margin-bottom: 18px
+.join-wrapper
+	max-width: 430px
+.join-subtitle
+	font-style: normal
+	font-weight: normal
+	font-size: 17px
+	line-height: 23px
+	text-align: center
+	color: #000000
+	max-width: 280px
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 42px
+.advantages-image__title
+	font-style: normal
+	font-weight: bold
+	font-size: 26px
+	line-height: 36px
+	text-align: center
+	color: #000000
+	max-width: 430px
+	margin-top: 326px
+.advantages-image
+	height: 759px
+	margin-top: -338px
+.new-stories.stories
+	position: relative
+	z-index: 2
+	background-color: transparent
+.advantages-image img
+	margin: 0 auto
+	width: auto
+.new-stories + .advantages
+	overflow: visible
+.new-stories + .advantages .advantages-wrapper
+	max-width: 430px
+	margin-left: auto
+	margin-right: auto
+.tutorial-quiz__section--sticked .tutorial-quiz__button
+	transition: all .3s ease
+	&:hover
+		color: #fff
+		opacity: 0.8
+.limited-title
+	font-style: normal
+	font-weight: bold
+	font-size: 26px
+	line-height: 36px
+	text-align: center
+	color: #000000
+	max-width: 430px
+	margin-bottom: 16px
+.limited-subtitle
+	font-style: normal
+	font-weight: normal
+	font-size: 17px
+	line-height: 23px
+	text-align: center
+	color: #000000
+	max-width: 380px
+	margin-bottom: 42px
+.limited-box
+	max-width: 430px
+	margin-left: auto
+	margin-right: auto
+.tutorial-quiz__button
+	max-width: 430px
+.prefooter + footer
+	position: relative
+	padding-bottom: 0
+	.section-wrapper
+		background: #0F1113
+	.footer-wrapper
+		border-top: 0
+		padding: 28px 0 32px 0
+	.footer-title
+		text-align: left
+		a
+			color: #fff
+			text-decoration: underline
+			font-weight: normal
+	.footer-subtitle
+		text-align: left
+	.footer-right span:first-child
+		font-style: normal
+		font-weight: normal
+		font-size: 10px
+		line-height: 14px
+		text-align: right
+		color: #FFFFFF
+.limited-devider:before
+	max-width: 430px
+.limited-wrapper
+	max-width: 430px
+	margin-left: auto
+	margin-right: auto
+.prefooter-title
+	font-style: normal
+	font-weight: normal
+	font-size: 13px
+	line-height: 18px
+	text-align: center
+	color: #999999
+	margin-bottom: 16px
+	max-width: 430px
+	margin-left: auto
+	margin-right: auto
+	a
+		color: $accent
+.prefooter-subtitle
+	font-style: normal
+	font-weight: normal
+	font-size: 13px
+	line-height: 18px
+	text-align: center
+	color: #000000
+	margin-bottom: 48px
+	max-width: 430px
+	margin-left: auto
+	margin-right: auto
+.mobile
+	display: none!important
+.stories .slick-slide
+	margin: 0 15px
+.stories-day
+	min-width: 68px
+	padding-left: 0
+	padding-right: 0
+	display: flex
+	align-items: center
+	justify-content: center
+	&:first-child
+		border-radius: 0 4px 4px 0
+	&:last-child
+		border-radius: 4px 0 0 4px
+.new-stories .stories-bottom
+	padding-bottom: 15px
+.new-stories .slick-dots li button
+	width: 8px
+	height: 8px
+.new-stories .slick-dots
+	padding-top: 22px
+	margin-left: -6px
+	li
+		display: inline-flex
+		align-items: center
+		justify-content: center
+.quiz-step__question + .fdr
+	margin-top: 75px
+.tutorial-payment__field.select-field:after, .tutorial-payment__field .select-field:after
+	pointer-events: none
+@import _media
